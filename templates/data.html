@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table,th,td{
+        border:1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+<body class="dt">
+    <center>
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Extension</th>
+                <th>Date</th>
+                <th>View</th>
+                <th>Download</th>
+                <th>Dlete</th>
+            </tr>
+            {% for i in count %}
+            <tr>
+                <td>{{i[0]}}</td>
+                <td>{{i[1]}}</td>
+                <td>{{i[2]}}</td>
+                <td><a href="{{url_for('viewfile',fid=i[0])}}">View</a></td>
+                <td><a href="{{url_for('download',fid=i[0])}}">Download</a></td>
+                <td><a href="{{url_for('fdelete',fid=i[0])}}">Delete</a></td>
+            {% endfor %}
+            </tr>
+        </table>
+    </center>
+</body>
+</html>

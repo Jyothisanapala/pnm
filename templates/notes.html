@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='notes.css')}}"/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <h3>Add Notes</h3><br>
+        <form method='POST'>
+            <label for="one">Title</label><br>
+            <input type="text" id="one" placeholder="Enter notes title" name="title" required/><br><br>
+            <label for="two">Description</label><br>
+            <textarea id="two" name="desc" placeholder="enter notes description" cols="100" required></textarea><br><br>
+            <button class="button31">Add notes</button>
+        </form>
+    </div>
+</body>
+</html>

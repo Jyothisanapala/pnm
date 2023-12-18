@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="{{url_for('static',filename='signup.css')}}"/>
+    <title>Document</title>
+</head>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      <center><b style="color:rgb(20, 132, 229);">{{ message }}</b></center>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+<body>
+    <form method="POST">
+        <div class="form">
+            <h3>Sign Up</h3>
+             <div class="one">
+                <i class="two2"></i>
+                <input type="text" name="user" placeholder="Enter your Name">
+            </div><br><br>
+            <div class="one">
+                <i class="two2"></i>
+                <input type="text" name="email" placeholder="Enter your Email Address">
+            </div><br><br>
+            <div class="one">
+                <i class="two2"></i>
+                <input type="text" name="mobile" placeholder="Enter your Mobile number">
+            </div><br><br>
+            <div class="one">
+                <i class="two2"></i>
+                <input type="text" name="address" placeholder="Enter your Address">
+            </div><br><br>
+            <div class="one">
+                <i class="two2"></i>
+                <input type="password" name="password" placeholder="Ener your Password">
+            </div><br><br>
+            <button>Sign Up</button><br>
+            <a href="#" target="_blank">Already Have An Account?</a>
+        </div>
+    </form>
+</body>
+</html>

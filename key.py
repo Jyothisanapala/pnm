@@ -1,0 +1,3 @@
+secret_key=b'\rA\xa6\x7fL-F\x05\x8f\xba\x8bh\xe7\xd8h\xc4\x07\xd8}\xbf'
+salt='confirmaation'
+salt2='forgot'

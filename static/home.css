@@ -1,0 +1,44 @@
+#go{
+    color:black;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    border:none;
+}
+#go:hover{
+   color:#1c1c7a;
+}
+#go1{
+    background-color:#1c1c7a;
+    color:white;
+    padding:5px;
+    border-radius:5px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+    border:none;
+}
+.bgimg{
+    background-image: url('https://img.freepik.com/free-photo/business-delayed-due-coronavirus_23-2148570699.jpg?w=740&t=st=1702097654~exp=1702098254~hmac=9b2a9a86c5ba33226d32745bdb98bac308f210c64289d29348abe3f3ff7e1d97');
+    background-size: cover;
+    height:100vh;
+}
+.navbar {
+    background-color:rgb(255, 255, 255);
+    size: cover;
+    content: left;
+}
+
+body {
+    margin: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+form{
+    margin-top:10px;
+}

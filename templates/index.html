@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     #one{
+       background-image: url('https://img.freepik.com/free-photo/business-delayed-due-coronavirus_23-2148570699.jpg?w=740&t=st=1702097654~exp=1702098254~hmac=9b2a9a86c5ba33226d32745bdb98bac308f210c64289d29348abe3f3ff7e1d97');
+       background-size: cover;
+       align-items: center;
+       padding-top:10%;
+     }
+     h2{
+        color:blue;
+     }
+    .image{
+        width:50%;
+    }
+    .button12{
+        background-color:green;
+        color:white;
+        padding:20px;
+        border-radius: 8px;
+        border:none;
+        margin: 20px;
+        cursor: pointer;
+    }
+    p{
+        text-align: justify;
+        text-decoration: none;
+    }
+</style>
+<body id="one">
+    <center>
+        <div class="container">
+            <div class="image">
+                <h2><b>Personal Record Managemant</b></h2>
+                <a href="{{url_for('signup')}}"><button class="button12">Sign Up</button></a>
+                <a href="{{url_for('login')}}"><button class="button12">Login</button></a>
+            </div>
+        </div>
+    </center>
+</body>
+</html>

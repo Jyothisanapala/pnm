@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='notes.css')}}"/>
+    <title>Document</title>
+</head>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      <center><b style="color:rgb(20, 132, 229);">{{ message }}</b></center>
+    {% endfor %}
+  {% endif %}
+{% endwith %}
+
+<body>
+    <form>
+        <label for="one">Title</label><br>
+        <input type="text" id="one" value="{{count1[0]}}" name="title" readonly/><br><br>
+        <label for="two">Description</label><br>
+        <textarea id="two" cols="80"  name="desc" readonly>{{count1[1]}}</textarea><br><br>
+        <button class="button31"><a href="{{url_for('update',nid=nid)}}">Update</a></button>
+        <button class="button31"><a href="{{url_for('delete',nid=nid)}}">Delete</a></button>
+    </form>
+</body>
+</html>
